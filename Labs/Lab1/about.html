@@ -9,25 +9,31 @@ in html
 
 -->
 <head>
-    <h1> Roberto Bradley </h1>
-    <h2> Portfolio </h2>
-</head>
+    <meta charset="utf-8" />
+    <title>Roberto Bradley's Portfolio Website</title>
+    
+    <style>
+        @import url("css/styles.css");
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<head/>
 
+        <header>
+            <h1> Roberto Bradley </h1>
+            <h2> Portfolio </h2>
+        </header>
 <nav>
     <hr width="50%" />
     <a href="index.html"> Home </a>
-    <a href="about.html"> About </a>
-    <a href="contact.html"> Contact Me </a>
+    <a id = "selected" href="about.html"> About </a>
+    <a href="contactme.html"> Contact Me </a>
 </nav>
 
 <br/> <br />
 
 <!-- This is the head -->
 <!-- All styles and javascript go inside the head -->
-    <head>
-        
-        
-    </head>
+    
 <!-- closing head -->
 
     <!-- This is the body -->
@@ -52,22 +58,27 @@ in html
             <td>1</td>
         </tr>
     </table>
-    </div>    
+</div>    
         
-        <ul>
-        <li>Personal Interests</li>
-        <li>Video Games: Chess and scrabble are the ultimate video games.</li>
-        <li>Shark Wrestling: There's times where you need to teach sharks some manners. Bruce is not a friend to humans.</li>
-        <li>Woman's Mud Wrestling: Need I say more?</li>
-        <li>CatDog Show: This show has been so inspirational in my life and I wish all could see it.</li>
+    <ul>
+        <li><span class = "hobby">Personal Interests:</span></li>
+        <li><span class = "hobby">Video Games:</span>Chess and scrabble are the ultimate video games.</li>
+        <li><span class = "hobby">Shark Wrestling:</span>There's times where you need to teach sharks some manners. Bruce is not a friend to humans.</li>
+        <li><span class = "hobby">Woman's Mud Wrestling:</span>Need I say more?</li>
+        <li><span class = "hobby">CatDog Show:</span>This show has been so inspirational in my life and I wish all could see it.</li>
     </ul>
         
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
-        <footer>
-            
-            
-        </footer>
+       <footer>
+            <figure id="logo">
+                <img src="img/csumblogo.jpg" alt="csumb logo" />
+            </figure>
+                <hr>
+                CST 336 Internet Programming. 2018&copy; Bradley <br />
+                <strong>Disclaimer:</strong> The information in this webpage is fictitous. <br />
+                It is used for academic purposes only.
+            </footer>
         <!-- closing footer -->
         
     </body>

@@ -13,28 +13,9 @@ in html
     <title>Roberto Bradley's Portfolio Website</title>
     
     <style>
-        body
-        {
-            background-color:black;
-            color:gray;
-        }
-        header, nav, footer, div{
-            text-align: center;
-        }
-        nav a
-        {
-            padding: 10px;
-            font-size:12px;
-            color: grey;
-        }
-        img 
-        {
-            border-radius: 100px;
-            float: left;
-        }
-       
-        
+        @import url("css/styles.css");
     </style>
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
     <body>
         <header>
@@ -43,19 +24,19 @@ in html
         </header>
         <nav>
             <hr width="50%" />
-            <a href="index.html"> Home </a>
+            <a id ="selected" href="index.html"> Home </a>
             <a href="about.html"> About </a>
-            <a href="contact.html"> Contact Me </a>
+            <a href="contactme.html"> Contact Me </a>
         </nav>
     
         <br/> <br />
     
         <main>
-            <figure>
-                <img src="img/RobertoBradley_50.jpg" alt="Roberto Bradley's picture" />
+            <figure id="me">
+                <img id = "myPhoto" src="img/RobertoBradley_50.jpg" alt="Roberto Bradley's picture" />
             </figure>
         
-        <div>
+        <div id="welcomeText">
             Hello! <br />
             <p>Thank you for visiting my professional Portfolio website.</p>
             
@@ -63,13 +44,22 @@ in html
             <p>Feel free to contact me!</p>
             <em>"To succeed in life, you need three things: a <strong>wishbone</strong>, a <strong>backbone</strong> and a <strong>funny bone</strong>"</em><br />
             - Reba McEntire
+            
         </div>
         
     </main>
     
-    
         <!-- This is the body -->
         <!-- This is where we place the content of our website -->
+        <footer>
+            <figure id="logo">
+                <img src="img/csumblogo.jpg" alt="csumb logo" />
+            </figure>
+                <hr>
+                CST 336 Internet Programming. 2018&copy; Bradley <br />
+                <strong>Disclaimer:</strong> The information in this webpage is fictitous. <br />
+                It is used for academic purposes only.
+            </footer>
     </body>
   
 </html>
