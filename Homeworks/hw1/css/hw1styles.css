@@ -55,7 +55,7 @@ footer
  margin:auto;
  text-shadow: 2px 2px 5px black;
 }
-#robo1pic 
+#robo1pic, #fbot 
 {
     float:left;
 }
@@ -136,11 +136,23 @@ dt
     text-shadow: 2px 2px 5px black;
     color:yellow;
 }
-#vint
+#vint, #happybot
 {
     float: right;
 }
 #endH 
 {
     text-shadow: 2px 2px 5px black;
+}
+#p2div
+{
+    float:left;
+ font-size: 1.3em;
+ color:white;
+ height:400px;
+ width:300px;
+ margin:auto;
+ border: 3px solid rgb(136,171,247);
+ background: #75D8E1;
+ text-shadow: 2px 2px 5px black;
 }
