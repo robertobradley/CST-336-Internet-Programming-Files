@@ -1,0 +1,128 @@
+body
+{
+ background-image: url("img/roboback.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+}
+nav 
+{
+    text-align: center;
+}
+hr
+{
+ width: 50%;
+}
+nav a
+{
+ /* linkes within "nav" container */
+ padding: 15px;
+ padding-bottom:4px;
+ font-size:1.8em;
+ text-decoration: none; /* removes underline */
+ color:white;
+}
+nav a:hover
+{
+ border-bottom:2px blue solid;
+ font-size: 2em;
+ transition: .9s;
+}
+h1,h2
+{
+    text-align: center;
+    text-shadow: 4px 4px 10px red;
+    color:white;
+}
+
+footer
+{
+ text-align: center;
+ color:white;
+ font-size: small;
+ clear:left;
+ margin-bottom: auto;
+}
+#picturebox 
+{
+ font-size: 2em;
+ color:white;
+ height:225px;
+ border: 3px solid rgb(136,171,247);
+ width:600px;
+ background: #75D8E1;
+ margin:auto;
+}
+#words 
+{
+    font-size: 1.5em;
+    background:rgb(136,171,247);
+    color:white;
+    height:220px;
+    width:600px;
+    border: 3px solid white;
+    margin: auto;
+    text-align: left;
+}
+#firstp 
+{
+    text-align: center;
+}
+.maindiv 
+{
+    float:none;
+    height:450px;
+    width:450px;
+    margin: auto;
+}
+
+.box {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+
+#p1leftbox
+{
+ float:left;
+ font-size: 2em;
+ color:white;
+ height:400px;
+ width:300px;
+ margin:auto;
+ border: 3px solid rgb(136,171,247);
+ background: #75D8E1;
+}
+#p1middle
+{
+    float: right;
+ font-size: 1.5em;
+    background:rgb(136,171,247);
+    color:white;
+    height:400px;
+    width:300px;
+    border: 3px solid white;
+    margin: auto;
+    text-align: left;
+}
+#referances
+{
+    font-size: 1.5em;
+    background:rgb(136,171,247);
+    color:white;
+    height:400px;
+    width:800px;
+    border: 3px solid white;
+    margin: auto;
+    text-align: left;
+}
+ #selected 
+{
+ color:red;
+}
+dt
+{
+    color:yellow;
+}
