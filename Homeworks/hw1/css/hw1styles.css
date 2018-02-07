@@ -44,6 +44,8 @@ footer
 }
 #picturebox 
 {
+ float:none;
+ text-align: left;
  font-size: 2em;
  color:white;
  height:225px;
@@ -52,6 +54,10 @@ footer
  background: #75D8E1;
  margin:auto;
  text-shadow: 2px 2px 5px black;
+}
+#robo1pic 
+{
+    float:left;
 }
 #words 
 {
