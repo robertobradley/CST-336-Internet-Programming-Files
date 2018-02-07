@@ -51,6 +51,7 @@ footer
  width:600px;
  background: #75D8E1;
  margin:auto;
+ text-shadow: 2px 2px 5px black;
 }
 #words 
 {
@@ -62,6 +63,7 @@ footer
     border: 3px solid white;
     margin: auto;
     text-align: left;
+    text-shadow: 2px 2px 5px black;
 }
 #firstp 
 {
@@ -87,13 +89,14 @@ footer
 #p1leftbox
 {
  float:left;
- font-size: 2em;
+ font-size: 1.3em;
  color:white;
  height:400px;
  width:300px;
  margin:auto;
  border: 3px solid rgb(136,171,247);
  background: #75D8E1;
+ text-shadow: 2px 2px 5px black;
 }
 #p1middle
 {
@@ -124,5 +127,14 @@ footer
 }
 dt
 {
+    text-shadow: 2px 2px 5px black;
     color:yellow;
+}
+#vint
+{
+    float: right;
+}
+#endH 
+{
+    text-shadow: 2px 2px 5px black;
 }
