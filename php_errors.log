@@ -1,0 +1,20 @@
+[07-Feb-2018 23:38:45 UTC] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/ubuntu/workspace/rbradley/Challenges/random.php on line 22
+[07-Feb-2018 23:46:52 UTC] PHP Fatal error:  Call to undefined function radn() in /home/ubuntu/workspace/rbradley/Challenges/random.php on line 45
+[07-Feb-2018 23:46:52 UTC] PHP Stack trace:
+[07-Feb-2018 23:46:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Challenges/random.php:0
+[07-Feb-2018 23:48:49 UTC] PHP Parse error:  syntax error, unexpected '$suit' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/rbradley/Challenges/random.php on line 38
+[07-Feb-2018 23:49:15 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/rbradley/Challenges/random.php on line 38
+[07-Feb-2018 23:49:15 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ',' or ';' in /home/ubuntu/workspace/rbradley/Challenges/random.php on line 38
+[07-Feb-2018 23:52:15 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/rbradley/Challenges/random.php on line 56
+[07-Feb-2018 23:52:17 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/rbradley/Challenges/random.php on line 56
+[12-Feb-2018 22:37:13 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/rbradley/Practice/php_arrays.php on line 29
+[12-Feb-2018 22:38:45 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/rbradley/Practice/php_arrays.php on line 29
+[12-Feb-2018 22:39:21 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/rbradley/Practice/php_arrays.php on line 29
+[12-Feb-2018 23:01:50 UTC] PHP Warning:  Missing argument 1 for displayCard(), called in /home/ubuntu/workspace/rbradley/Practice/php_arrays.php on line 15 and defined in /home/ubuntu/workspace/rbradley/Practice/php_arrays.php on line 17
+[12-Feb-2018 23:01:50 UTC] PHP Stack trace:
+[12-Feb-2018 23:01:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Practice/php_arrays.php:0
+[12-Feb-2018 23:01:50 UTC] PHP   2. displayCard() /home/ubuntu/workspace/rbradley/Practice/php_arrays.php:15
+[12-Feb-2018 23:14:44 UTC] PHP Warning:  rand() expects exactly 2 parameters, 1 given in /home/ubuntu/workspace/rbradley/Practice/php_arrays.php on line 33
+[12-Feb-2018 23:14:44 UTC] PHP Stack trace:
+[12-Feb-2018 23:14:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Practice/php_arrays.php:0
+[12-Feb-2018 23:14:44 UTC] PHP   2. rand() /home/ubuntu/workspace/rbradley/Practice/php_arrays.php:33
