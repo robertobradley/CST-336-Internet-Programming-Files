@@ -6,6 +6,7 @@
     }
     
     input {
+        border-radius: 25px;
         font-size: 3em;
         color: black;
     }
@@ -14,3 +15,22 @@
          margin: 0 auto;   
          width: 700px;
     }
+    
+    
+    #checkbox{
+        display: inline-block;
+        text-align:left;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        color: black;
+    }
+    
+    h3{
+        color: black;
+        
+        background-color: white;
+        padding :10px;
+        border-radius: 15px;
+    }
+    

@@ -22,3 +22,15 @@
 [04-Mar-2018 05:02:56 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php on line 97
 [04-Mar-2018 05:02:56 UTC] PHP Stack trace:
 [04-Mar-2018 05:02:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php:0
+[04-Mar-2018 07:58:31 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php on line 98
+[04-Mar-2018 07:58:31 UTC] PHP Stack trace:
+[04-Mar-2018 07:58:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php:0
+[04-Mar-2018 07:58:40 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php on line 98
+[04-Mar-2018 07:58:40 UTC] PHP Stack trace:
+[04-Mar-2018 07:58:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php:0
+[04-Mar-2018 08:11:57 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php on line 98
+[04-Mar-2018 08:11:57 UTC] PHP Stack trace:
+[04-Mar-2018 08:11:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php:0
+[04-Mar-2018 08:12:00 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php on line 98
+[04-Mar-2018 08:12:00 UTC] PHP Stack trace:
+[04-Mar-2018 08:12:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab4/index.php:0

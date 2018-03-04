@@ -7,7 +7,10 @@
   if (isset($_GET['keyword'])) { //if form was submitted
       
       include 'api/pixabayAPI.php';
-      
+      if(empty($_GET['keyword'])){
+        echo "<h3>Keyword box is empty! </h3><br>";
+      }
+      else
       echo "<h3>You searched for " . $_GET['keyword'] . "</h3>";
       
       $orientation = "horizontal";
@@ -21,7 +24,10 @@
       
       if (!empty($_GET['category'])) { //user selected a category
         $keyword = $_GET['category'];
+        echo "<h3> Category selected: $keyword. </h3>";
       }
+      else
+      echo "<h3> Category not selected!</h3>";
       
       $imageURLs = getImageURLs($keyword, $orientation);
       
@@ -33,7 +39,7 @@
       
   }      
  
- function checkCategor($category)
+ function checkCategory($category)
  {
   if($category == $_GET['category'])
   {
@@ -73,13 +79,17 @@
             }  
         ?>
 
-        
+        </div>
 
         <form method="GET">
             
             <input type="text" size="20" name="keyword" placeholder="Keyword to search for" value="<?=$_GET['keyword']?>"/>
             
+            <br>
+            <div id="checkbox">
+
             <input type="radio" name="layout" value="horizontal" id="hlayout" 
+            
             
             <?php
                if ($_GET['layout'] == "horizontal") {
@@ -88,15 +98,17 @@
             ?>
             
             >
+            
             <label for="hlayout"> Horizontal </label>
             
             <input type="radio" name="layout" value="vertical" id="vlayout" <?= ($_GET['layout']=="vertical")?"checked":"" ?>>
             <label for="vlayout"> Vertical </label>
-            
+            </div>
+            <br>
             <select name="category">
               <option value="" >  Select One </option> 
-              <option value="sea" <?=checkCategory('Sea')?>>  Ocean </option>
-              <option selected <?=checkCategory('Forest')?>>  Forest </option>
+              <option value="sea" <?=checkCategory('Ocean')?>>  Ocean </option>
+              <option <?=checkCategory('Forest')?>>  Forest </option>
               <option <?=checkCategory('Sky')?>>  Sky </option>
             </select>
             
@@ -126,6 +138,18 @@
                 </div>
                 <div class="carousel-item">
                   <img class="d-block w-100" src="<?=$imageURLs[2]?>" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?=$imageURLs[3]?>" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?=$imageURLs[4]?>" alt="Fifth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?=$imageURLs[5]?>" alt="Sixth slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="<?=$imageURLs[6]?>" alt="Seventh slide">
                 </div>
               </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
