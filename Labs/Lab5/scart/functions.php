@@ -1,4 +1,5 @@
 <?php
+
 function displayCart()
 {
     if(isset($_SESSION['cart']))

@@ -43,3 +43,6 @@
 [31-Mar-2018 23:34:37 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/rbradley/Labs/Lab6/index.php on line 6
 [31-Mar-2018 23:34:37 UTC] PHP Stack trace:
 [31-Mar-2018 23:34:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab6/index.php:0
+[01-Apr-2018 04:25:31 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/rbradley/Labs/Lab6/purchaseHistory.php on line 14
+[01-Apr-2018 04:25:31 UTC] PHP Stack trace:
+[01-Apr-2018 04:25:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab6/purchaseHistory.php:0

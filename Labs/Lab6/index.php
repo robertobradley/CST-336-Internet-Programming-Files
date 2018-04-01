@@ -80,7 +80,7 @@
              $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
             foreach ($records as $record) {
-                 echo "<a href=\"purchaseHistory.php?productId= ". $record["productId"] .""\"> History </a>";
+                 echo "<a class = 'links' href=\"purchaseHistory.php?productId=".$record["productId"]."\"> History </a>";
                  echo  $record["productName"] . " " . $record["productDescription"] . " $". $record["price"] . "<br /><br />";
             
             }
@@ -95,6 +95,9 @@
 <html>
     <head>
         <title> OtterMart Product Search </title>
+        <style>
+            @import url("css/styles.css");
+        </style>
     </head>
     <body>
 
