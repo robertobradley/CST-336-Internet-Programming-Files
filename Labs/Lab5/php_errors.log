@@ -1,0 +1,2 @@
+[31-Mar-2018 23:08:14 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/rbradley/Labs/Lab5/scart/index.php on line 3
+[31-Mar-2018 23:21:42 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/rbradley/Labs/Lab5/scart/index.php on line 48

@@ -1,49 +1,51 @@
 <?php
 include 'functions.php';
+//starting session
 session_start();
 
+//create and array in the Session to hold out cart Items
 if (!isset($_SESSION['cart']))
 {
     $_SESSION['cart'] = array();
 }
 
-// checking to see if the form is submitted
-if(isset($_GET['query']))
+//checks to see if the search form has been submitted
+if (isset($_GET['query']))
 {
- // Get acces to our API function
- include 'wmapi.php';
- $items = getProducts($_GET['query']);
+    include "wmapi.php";
+    $items = getProducts($_GET['query']);
 }
 
-//If the 'itemName' is set, put it in the session cart and direct the user to the shop cart
+//If the "itemName" is set, put in the session cart and direct the user to the shopping cart
 if(isset($_POST['itemName']))
 {
     //create assosiative array for item properties
-    $newItem = array();
-    $newItem['name'] = $_POST['itemName'];
-    $newItem['price'] = $_POST['itemPrice'];
-    $newItem['img'] = $_POST['itemImg'];
-    $newItem['id'] = $_POST['itemId'];
-    
-    
-    foreach ($_SESSION['cart'] as &$item)
+    $newitem = array();
+    $newitem['name'] = $_POST['itemName'];
+    $newitem['price'] = $_POST['itemPrice'];
+    $newitem['img'] = $_POST['itemImg'];
+    $newitem['id'] = $_POST['itemId'];
+}
+
+//check to see if other items with this id are in the array
+// If so, this item isn't new. Only quantity
+// Must be passed by referance so that each item can be updated
+foreach ($_SESSION['cart'] as &$item)
+{
+    if($newItem['id'] == $item['id'])
     {
-        if ($newItem['id'] == $item['id'])
-        {
-            $item['quantity'] += 1;
-            $found = true;
-        }
-    }
-    
-    if($found != true)
-    {
-        $newItem['quantity'] = 1;
-        array_push($_SESSION['cart'], $newItem);
+        $item['quantity'] += 1;
+        $found = true;
     }
 }
+
+//else add it to array
+if($found != true)
+{
+    $newitem['quantity'] = 1;
+    array_push($_SESSION['cart'],$newItem);
+}
 ?>
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -82,11 +84,12 @@ if(isset($_POST['itemName']))
                     <input type="text" class="form-control" name="query" id="pName" placeholder="Name">
                 </div>
                 <input type="submit" value="Submit" class="btn btn-default">
+                
                 <br /><br />
             </form>
             
             <!-- Display Search Results -->
-            <?php displayResults(); ?>
+            <?php displayResults();?>
         </div>
     </div>
     </body>
