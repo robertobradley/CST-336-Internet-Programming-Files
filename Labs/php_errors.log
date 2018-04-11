@@ -54,3 +54,8 @@ Stack trace:
 #0 /home/ubuntu/workspace/rbradley/Labs/Lab7/addproduct.php(43): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/rbradley/Labs/Lab7/addproduct.php on line 43
+[09-Apr-2018 21:35:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php:57
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(57): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php on line 57

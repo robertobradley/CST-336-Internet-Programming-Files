@@ -1,0 +1,69 @@
+[02-Apr-2018 23:13:43 UTC] PHP Warning:  file(George Highlander): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 96
+[02-Apr-2018 23:13:43 UTC] PHP Stack trace:
+[02-Apr-2018 23:13:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:13:43 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:13:43 UTC] PHP   3. randnames() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:136
+[02-Apr-2018 23:13:43 UTC] PHP   4. file() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:96
+[02-Apr-2018 23:13:43 UTC] PHP Warning:  file(Holy Hurley): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 96
+[02-Apr-2018 23:13:43 UTC] PHP Stack trace:
+[02-Apr-2018 23:13:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:13:43 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:13:43 UTC] PHP   3. randnames() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:136
+[02-Apr-2018 23:13:43 UTC] PHP   4. file() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:96
+[02-Apr-2018 23:14:16 UTC] PHP Warning:  file(Mark the Shark): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 96
+[02-Apr-2018 23:14:16 UTC] PHP Stack trace:
+[02-Apr-2018 23:14:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:14:16 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:14:16 UTC] PHP   3. randnames() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:136
+[02-Apr-2018 23:14:16 UTC] PHP   4. file() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:96
+[02-Apr-2018 23:14:16 UTC] PHP Warning:  file(Queen Bee): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 96
+[02-Apr-2018 23:14:16 UTC] PHP Stack trace:
+[02-Apr-2018 23:14:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:14:16 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:14:16 UTC] PHP   3. randnames() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:136
+[02-Apr-2018 23:14:16 UTC] PHP   4. file() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:96
+[02-Apr-2018 23:14:25 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 255
+[02-Apr-2018 23:14:25 UTC] PHP Stack trace:
+[02-Apr-2018 23:14:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:14:25 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:14:25 UTC] PHP   3. getHand() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:133
+[02-Apr-2018 23:14:35 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 263
+[02-Apr-2018 23:14:35 UTC] PHP Stack trace:
+[02-Apr-2018 23:14:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:14:35 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:14:35 UTC] PHP   3. getHand() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:133
+[02-Apr-2018 23:14:48 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 263
+[02-Apr-2018 23:14:48 UTC] PHP Stack trace:
+[02-Apr-2018 23:14:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:14:48 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:14:48 UTC] PHP   3. getHand() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:133
+[02-Apr-2018 23:19:10 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 255
+[02-Apr-2018 23:19:10 UTC] PHP Stack trace:
+[02-Apr-2018 23:19:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:19:10 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:19:10 UTC] PHP   3. getHand() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:133
+[02-Apr-2018 23:19:14 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 255
+[02-Apr-2018 23:19:14 UTC] PHP Stack trace:
+[02-Apr-2018 23:19:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:19:14 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:19:14 UTC] PHP   3. getHand() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:133
+[02-Apr-2018 23:19:23 UTC] PHP Warning:  file(Mark the Shark): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 96
+[02-Apr-2018 23:19:23 UTC] PHP Stack trace:
+[02-Apr-2018 23:19:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:19:23 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:19:23 UTC] PHP   3. randnames() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:136
+[02-Apr-2018 23:19:23 UTC] PHP   4. file() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:96
+[02-Apr-2018 23:19:23 UTC] PHP Warning:  file(George Highlander): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 96
+[02-Apr-2018 23:19:23 UTC] PHP Stack trace:
+[02-Apr-2018 23:19:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:19:23 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:334
+[02-Apr-2018 23:19:23 UTC] PHP   3. randnames() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:136
+[02-Apr-2018 23:19:23 UTC] PHP   4. file() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:96
+[02-Apr-2018 23:20:54 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32 bytes) in /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php on line 256
+[02-Apr-2018 23:20:54 UTC] PHP Stack trace:
+[02-Apr-2018 23:20:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:0
+[02-Apr-2018 23:20:54 UTC] PHP   2. start() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:335
+[02-Apr-2018 23:20:54 UTC] PHP   3. getHand() /home/ubuntu/workspace/rbradley/Homeworks/hw3/index.php:134
+[05-Apr-2018 22:46:20 UTC] PHP Fatal error:  Cannot use [] for reading in /home/ubuntu/workspace/rbradley/Homeworks/hw3_old/index.php on line 6
+[06-Apr-2018 03:45:52 UTC] PHP Parse error:  syntax error, unexpected ''<button type="reset" value="R' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/rbradley/Homeworks/hw3_old/index.php on line 40
+[06-Apr-2018 17:09:32 UTC] PHP Parse error:  syntax error, unexpected '$gamerCount' (T_VARIABLE), expecting ',' or ';' in /home/ubuntu/workspace/rbradley/Homeworks/hw3_old/index.php on line 132

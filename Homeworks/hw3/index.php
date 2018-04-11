@@ -39,6 +39,7 @@
         
 <?php
 
+//print_r($_POST);
 
 //Validation portion
 $player = $_POST["player"];
@@ -92,7 +93,8 @@ function randnames($Names,$randomnames)
 {
 	for($i = 0;$i < $Names; $i++)
 	{
-		${"name" . $i} = file($randomnames[$i]);
+		//${"name" . $i} = file($randomnames[$i]);
+		${"name" . $i} = $randomnames[$i];
 		echo $name[$i];
 	}
 	
@@ -162,82 +164,82 @@ function getHand($playerNumber)
 	#Shuffling all my cards before entering the while loop, so it is random.
 	shuffle($myDeck);
 
-	if($dupe == true)
-	{
-	    while($flag) 
-	    {
-	    	$counter_forif = 1;
-		    $randomCard = rand(1,52);
+	// if($dupe == true)
+	// {
+	//     while($flag) 
+	//     {
+	//     	$counter_forif = 1;
+	// 	    $randomCard = rand(1,52);
 		    
-		    $tempHand = "<img class='cards' src='img/". $mySuits[ceil($randomCard / 13) - 1]."/" . $card . ".png'/>";
-		    if($playerNumber == 0)
-			{
-				array_push($player1,$tempHand);
-			}
-			if($playerNumber == 1)
-			{
-				array_push($player2, $tempHand);
-			}
-			if($playerNumber == 2)
-			{
-				array_push($player3, $tempHand);
-			}
-			if($playerNumber == 3)
-			{
-				array_push($player4, $tempHand);
-			}
+	// 	    $tempHand = "<img class='cards' src='img/". $mySuits[ceil($randomCard / 13) - 1]."/" . $card . ".png'/>";
+	// 	    if($playerNumber == 0)
+	// 		{
+	// 			array_push($player1,$tempHand);
+	// 		}
+	// 		if($playerNumber == 1)
+	// 		{
+	// 			array_push($player2, $tempHand);
+	// 		}
+	// 		if($playerNumber == 2)
+	// 		{
+	// 			array_push($player3, $tempHand);
+	// 		}
+	// 		if($playerNumber == 3)
+	// 		{
+	// 			array_push($player4, $tempHand);
+	// 		}
 			
-			$counter_forif +=1;
-			#Displaying the cards.
+	// 		$counter_forif +=1;
+	// 		#Displaying the cards.
 			
-			//echo $tempHand;
+	// 		//echo $tempHand;
 			
-			#If it has reached the amount of cards needed, add to allhands, print and jump out of while loop
-			if($counter_forif == $cardNumber)
-			{
-				if($playerNumber == 0)
-				{
-					array_push($allHands,$player1);
-					if(($playerNumber+1) == $isLast_num)
-					{
-					    echocards($allHands);
-					    $flag = false;
-					}
-				}
+	// 		#If it has reached the amount of cards needed, add to allhands, print and jump out of while loop
+	// 		if($counter_forif == $cardNumber)
+	// 		{
+	// 			if($playerNumber == 0)
+	// 			{
+	// 				array_push($allHands,$player1);
+	// 				if(($playerNumber+1) == $isLast_num)
+	// 				{
+	// 				    echocards($allHands);
+	// 				    $flag = false;
+	// 				}
+	// 			}
 				
-				if($playerNumber == 1)
-				{
-					array_push($allHands,$player2);
-					if(($playerNumber+1) == $isLast_num)
-					{
-					    echocards($allHands);
-						$flag = false;
-					}
-				}
+	// 			if($playerNumber == 1)
+	// 			{
+	// 				array_push($allHands,$player2);
+	// 				if(($playerNumber+1) == $isLast_num)
+	// 				{
+	// 				    echocards($allHands);
+	// 					$flag = false;
+	// 				}
+	// 			}
 				
-				if($playerNumber == 2)
-				{
-					array_push($allHands,$player3);
-					if(($playerNumber+1) == $isLast_num)
-					{
-					    echocards($allHands);
-					    $flag = false;
-					}    
-				}
+	// 			if($playerNumber == 2)
+	// 			{
+	// 				array_push($allHands,$player3);
+	// 				if(($playerNumber+1) == $isLast_num)
+	// 				{
+	// 				    echocards($allHands);
+	// 				    $flag = false;
+	// 				}    
+	// 			}
 				
-				if($playerNumber == 3)
-				{
-					array_push($allHands,$player4);
+	// 			if($playerNumber == 3)
+	// 			{
+	// 				array_push($allHands,$player4);
 					
-					if(($playerNumber+1) == $isLast_num)
-					{
-					    echocards($allHands);
-					    $flag = false;
-					}
-				}
-			}
-		}
-	}
+	// 				if(($playerNumber+1) == $isLast_num)
+	// 				{
+	// 				    echocards($allHands);
+	// 				    $flag = false;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 
 	if($dupe == false)
