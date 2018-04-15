@@ -1,6 +1,8 @@
 <?php
 
 session_start();
+
+
 if(!isset( $_SESSION['adminName']))
 {
   header("Location:index.php");
@@ -25,6 +27,8 @@ function displayAllProducts(){
 <html>
     <head>
         <title> Admin Main Page </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             
             form {
@@ -32,6 +36,11 @@ function displayAllProducts(){
             }
             
         </style>
+        
+        <?php //boot strap code?>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <script>
             
@@ -47,12 +56,16 @@ function displayAllProducts(){
     <body>
 
 
-        
+<div class="container">
+  <div class="jumbotron">
         <h1> Admin Main Page </h1>
         
         <h3> Welcome <?=$_SESSION['adminName']?>! </h3>
-        
+    </div>
+</div>
         <br />
+        <div class="container">
+        <div class="form-group">
         <form action="addProduct.php">
             <input type="submit" name="addproduct" value="Add Product"/>
         </form>
@@ -60,7 +73,8 @@ function displayAllProducts(){
         <form action="logout.php">
             <input type="submit"  value="Logout"/>
         </form>
-        
+        </div>
+        </div>
         <br />
         <strong> Products: </strong> <br />
         
@@ -77,7 +91,7 @@ function displayAllProducts(){
                 echo $record['productName'];
                 echo '<br>';
             }
-        
+            
         ?>
         
         

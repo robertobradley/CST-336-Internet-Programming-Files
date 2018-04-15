@@ -36,13 +36,12 @@
     $record = $stmt->fetch(PDO::FETCH_ASSOC); //expecting one single record
     
     //print_r($record);
-
-    if (empty($record)) {
-        
-        echo "Wrong username or password!";
-        
+    if (empty($record)) 
+    {
+       $_SESSION['wrongPass']="<div class='alert alert-danger'><strong>Password Issue! </strong>Wrong username or password!</div>";
+       header("Location:admin.php");
     } else {
-        
+        $_SESSION['passwrong'] = "false";
         
             //echo $record['firstName'] . " " . $record['lastName'];
             $_SESSION['adminName'] = $record['firstName'] . " " . $record['lastName'];

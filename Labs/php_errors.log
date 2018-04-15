@@ -59,3 +59,15 @@ Stack trace:
 #0 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(57): PDOStatement->execute()
 #1 {main}
   thrown in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php on line 57
+[15-Apr-2018 04:22:36 UTC] PHP Fatal error:  Cannot redeclare getDatabaseConnection() (previously declared in /home/ubuntu/workspace/rbradley/dbConnection.php:3) in /home/ubuntu/workspace/rbradley/dbConnection.php on line 3
+[15-Apr-2018 04:22:36 UTC] PHP Stack trace:
+[15-Apr-2018 04:22:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab7/admin.php:0
+[15-Apr-2018 04:26:41 UTC] PHP Fatal error:  Cannot redeclare getDatabaseConnection() (previously declared in /home/ubuntu/workspace/rbradley/dbConnection.php:3) in /home/ubuntu/workspace/rbradley/dbConnection.php on line 3
+[15-Apr-2018 04:26:41 UTC] PHP Stack trace:
+[15-Apr-2018 04:26:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab7/admin.php:0
+[15-Apr-2018 04:26:52 UTC] PHP Fatal error:  Cannot redeclare getDatabaseConnection() (previously declared in /home/ubuntu/workspace/rbradley/dbConnection.php:3) in /home/ubuntu/workspace/rbradley/dbConnection.php on line 3
+[15-Apr-2018 04:26:52 UTC] PHP Stack trace:
+[15-Apr-2018 04:26:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab7/admin.php:0
+[15-Apr-2018 04:32:09 UTC] PHP Fatal error:  Cannot redeclare getDatabaseConnection() (previously declared in /home/ubuntu/workspace/rbradley/dbConnection.php:3) in /home/ubuntu/workspace/rbradley/dbConnection.php on line 3
+[15-Apr-2018 04:32:09 UTC] PHP Stack trace:
+[15-Apr-2018 04:32:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab7/admin.php:0
