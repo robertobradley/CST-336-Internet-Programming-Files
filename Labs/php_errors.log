@@ -71,3 +71,4 @@ Stack trace:
 [15-Apr-2018 04:32:09 UTC] PHP Fatal error:  Cannot redeclare getDatabaseConnection() (previously declared in /home/ubuntu/workspace/rbradley/dbConnection.php:3) in /home/ubuntu/workspace/rbradley/dbConnection.php on line 3
 [15-Apr-2018 04:32:09 UTC] PHP Stack trace:
 [15-Apr-2018 04:32:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab7/admin.php:0
+[25-Apr-2018 21:53:48 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/rbradley/Labs/Lab9/checkUsernameAPI.php on line 12

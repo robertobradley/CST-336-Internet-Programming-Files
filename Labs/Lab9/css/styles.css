@@ -1,0 +1,38 @@
+body {
+    text-align:center;
+    font-size: 20px;
+    background-color:#2b5a88;
+}
+
+
+.jumbotron{
+    font-family: serif, cursive;
+    background-color : #75baff;
+    text-shadow: 2px 2px #1d5287;
+    color:white;
+}
+
+legend 
+{
+ font-size: 30px;
+ color: yellow;
+ text-shadow: 1px 2px black;
+ font-family: monospace;
+}
+
+#firstcont 
+{
+    font-family:Impact, Charcoal, sans-serif;
+    text-shadow: 1px 1px #64a3e3;
+    border-bottom-left-radius: 25px;
+}
+
+#button
+{
+    font-size:27px;
+    text-shadow: 1px 2px #1d5287;
+    border-color: #1d5287;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+

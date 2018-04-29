@@ -58,7 +58,7 @@
                 });
             
             
-                 $("#button").click(function(){
+                 $("#password2").change(function(){
                     
                     //alert($("#username").val());
                     //$.ajax({
@@ -79,7 +79,7 @@
                              } 
                              else 
                              {
-                              $("#passcheck").empty(); 
+                              gate = true;   
                              }
                              
                         
@@ -121,18 +121,9 @@
                         data: { "zip": $("#zipCode").val()  },
                         success: function(data,status) {
                         //alert(data.city);
-                         if (!data) {  //data == false
-                             
-                               $("#zipped").append("<div class = 'alert alert-danger'>There is no matching zipcode </strong></div>");
-                               
-                                
-                             }
-                        else{
-                            $("#zipped").empty();
                         $("#city").html(data.city);
                         $("#lat").html(data.latitude);
                         $("#long").html(data.longitude);
-                        }
                         },
                         complete: function(data,status) { //optional, used for debugging purposes
                         //alert(status);
@@ -186,13 +177,13 @@
         <form onsubmit="return validateForm()">
             <fieldset>
                <legend>Sign Up</legend>
-                <div id = "firstcont" class = container>
+                <div class = container>
                  <p class="bg-info text-white">  
                 First Name:  <input type="text"><br> 
                 Last Name:   <input type="text"><br> 
                 Email:       <input type="text"><br> 
                 Phone Number:<input type="text"><br><br>
-                Zip Code:    <input type="text" id="zipCode"><span id = zipped></span><br>
+                Zip Code:    <input type="text" id="zipCode"><br>
                 City:        <span id = "city"></span> 
                 <br>
                 Latitude:    <span id = "lat"></span>
@@ -215,8 +206,7 @@
                 
                 Type Password Again: <input id="password2" type="password" ><span id = "passcheck"></span><br>
                 
-                
-                <input type="submit" id = "button" class="btn btn-primary btn-lg" value = "Sign up!">
+                <input id = "button" type="submit" value="Sign up!">
                 </p>
                 </div>
             </fieldset>

@@ -2,7 +2,6 @@ var monkey_01;
 var numHits = 0;
 var misses = 0;
 var gameTimer;
-var endGame = false;
 
 window.onload = init();
 
