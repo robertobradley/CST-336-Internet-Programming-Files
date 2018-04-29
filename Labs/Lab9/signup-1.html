@@ -36,11 +36,12 @@
                         success: function(data,status) {
                             
                              if (!data) {  //data == false
-                             
+                                $("#user").empty();
                                $("#user").append("<div class = 'alert alert-success'><strong> Username is available </strong></div>");
                                
                                 
                              } else {
+                                 $("#user").empty();
       
                                 $("#user").append("<div class = 'alert alert-danger'><strong> Username </strong> is AlREADY TAKEN </div>");
                                     gate =  false;
