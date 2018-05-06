@@ -66,7 +66,7 @@ function displayAllProducts(){
         <br />
         <div class="container">
         <div class="form-group">
-        <form action="addProduct.php">
+        <form action="addproduct.php">
             <input type="submit" name="addproduct" value="Add Product"/>
         </form>
         

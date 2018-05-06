@@ -72,3 +72,34 @@ Stack trace:
 [15-Apr-2018 04:32:09 UTC] PHP Stack trace:
 [15-Apr-2018 04:32:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Labs/Lab7/admin.php:0
 [25-Apr-2018 21:53:48 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/rbradley/Labs/Lab9/checkUsernameAPI.php on line 12
+[03-May-2018 21:29:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(29): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(64): getProductInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php on line 29
+[05-May-2018 19:38:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(29): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(64): getProductInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php on line 29
+[05-May-2018 19:42:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(29): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(64): getProductInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php on line 29
+[05-May-2018 19:48:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(29): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(64): getProductInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php on line 29
+[05-May-2018 19:48:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(29): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php(64): getProductInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/Labs/Lab7/updateProduct.php on line 29
+[06-May-2018 03:45:29 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/rbradley/Labs/Lab10/about.php on line 6

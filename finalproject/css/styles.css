@@ -1,0 +1,41 @@
+.yellow
+{
+    color: #dfe11d;
+    text-shadow:1px 1px black;
+}
+.red 
+{
+    color: red;
+    text-shadow:1px 1px black;
+}
+.green
+{
+    color:green;
+    text-shadow:1px 1px black;
+}
+.white
+{
+    background-color:black;
+    color:white;
+    text-shadow:1px 1px grey;
+}
+.black
+{
+    color:solid black;
+    background-color:grey;
+    text-shadow:1px 1px white;
+}
+.orange
+{
+    color:orange;
+    text-shadow:1px 1px black;
+}
+
+body 
+{
+    text-align: center;
+}
+
+#connection, #form{
+    text-align:center;
+}

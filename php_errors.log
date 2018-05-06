@@ -18,3 +18,111 @@
 [12-Feb-2018 23:14:44 UTC] PHP Stack trace:
 [12-Feb-2018 23:14:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/Practice/php_arrays.php:0
 [12-Feb-2018 23:14:44 UTC] PHP   2. rand() /home/ubuntu/workspace/rbradley/Practice/php_arrays.php:33
+[01-May-2018 07:29:30 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 7
+[01-May-2018 07:29:30 UTC] PHP Stack trace:
+[01-May-2018 07:29:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:29:30 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 7
+[01-May-2018 07:29:30 UTC] PHP Stack trace:
+[01-May-2018 07:29:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:29:30 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 9
+[01-May-2018 07:29:30 UTC] PHP Stack trace:
+[01-May-2018 07:29:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:30:07 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 7
+[01-May-2018 07:30:07 UTC] PHP Stack trace:
+[01-May-2018 07:30:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:30:07 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 7
+[01-May-2018 07:30:07 UTC] PHP Stack trace:
+[01-May-2018 07:30:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:30:07 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 9
+[01-May-2018 07:30:07 UTC] PHP Stack trace:
+[01-May-2018 07:30:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:30:36 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 7
+[01-May-2018 07:30:36 UTC] PHP Stack trace:
+[01-May-2018 07:30:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:30:36 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 7
+[01-May-2018 07:30:36 UTC] PHP Stack trace:
+[01-May-2018 07:30:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:30:36 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 9
+[01-May-2018 07:30:36 UTC] PHP Stack trace:
+[01-May-2018 07:30:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:0
+[01-May-2018 07:31:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'finalproject.om_admin' doesn't exist' in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php:35
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php(35): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/loginProcess.php on line 35
+[01-May-2018 23:36:20 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/finalproject/admin.php on line 10
+[01-May-2018 23:36:20 UTC] PHP Stack trace:
+[01-May-2018 23:36:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/admin.php:0
+[01-May-2018 23:36:20 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/rbradley/finalproject/admin.php on line 10
+[01-May-2018 23:36:20 UTC] PHP Stack trace:
+[01-May-2018 23:36:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/admin.php:0
+[01-May-2018 23:36:20 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/rbradley/finalproject/admin.php on line 11
+[01-May-2018 23:36:20 UTC] PHP Stack trace:
+[01-May-2018 23:36:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/admin.php:0
+[01-May-2018 23:51:41 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/rbradley/finalproject/admin.php on line 10
+[01-May-2018 23:51:41 UTC] PHP Stack trace:
+[01-May-2018 23:51:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/admin.php:0
+[01-May-2018 23:51:41 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/rbradley/finalproject/admin.php on line 10
+[01-May-2018 23:51:41 UTC] PHP Stack trace:
+[01-May-2018 23:51:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/admin.php:0
+[01-May-2018 23:51:41 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/rbradley/finalproject/admin.php on line 11
+[01-May-2018 23:51:41 UTC] PHP Stack trace:
+[01-May-2018 23:51:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/rbradley/finalproject/admin.php:0
+[03-May-2018 22:43:02 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/rbradley/finalproject/home.php on line 34
+[03-May-2018 22:44:33 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/rbradley/finalproject/home.php on line 34
+[03-May-2018 22:45:17 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/rbradley/finalproject/home.php on line 34
+[03-May-2018 22:45:38 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/rbradley/finalproject/home.php on line 34
+[03-May-2018 22:46:34 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/ubuntu/workspace/rbradley/finalproject/home.php on line 35
+[04-May-2018 17:44:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'finalproject.om_product' doesn't exist' in /home/ubuntu/workspace/rbradley/finalproject/delete.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/delete.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/delete.php on line 9
+[04-May-2018 17:45:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productId' in 'where clause'' in /home/ubuntu/workspace/rbradley/finalproject/delete.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/delete.php(9): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/delete.php on line 9
+[04-May-2018 21:45:43 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/rbradley/finalproject/typesApi.php on line 3
+[05-May-2018 19:06:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'finalproject.producs' doesn't exist' in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(12): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(87): getCategories('2')
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php on line 12
+[05-May-2018 19:10:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'finalproject.producs' doesn't exist' in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(12): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(87): getCategories('2')
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php on line 12
+[05-May-2018 19:12:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'finalproject.producs' doesn't exist' in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(12): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(87): getCategories('2')
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php on line 12
+[05-May-2018 19:14:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from producs' at line 1' in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(12): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(87): getCategories('2')
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php on line 12
+[05-May-2018 19:15:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from producs' at line 1' in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(12): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(87): getCategories('2')
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php on line 12
+[05-May-2018 19:15:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from producs' at line 1' in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(12): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(87): getCategories('2')
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php on line 12
+[05-May-2018 19:16:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from produce' at line 1' in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(12): PDOStatement->execute()
+#1 /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php(87): getCategories('2')
+#2 {main}
+  thrown in /home/ubuntu/workspace/rbradley/finalproject/updateProduct.php on line 12
