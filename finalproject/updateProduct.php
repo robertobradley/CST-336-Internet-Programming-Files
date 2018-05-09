@@ -82,7 +82,7 @@
         }</style>
     </head>
     <body>
-        <h1>Update Product</h1>
+        <h1>Update Vegtable Info</h1>
         
         <form>
             <input type="hidden" name="id" value= "<?=$product['id']?>"/>
