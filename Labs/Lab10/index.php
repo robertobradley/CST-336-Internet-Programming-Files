@@ -15,7 +15,7 @@
           <img class="d-block w-100" src="img/samantha.jpg"  alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="img/ted.jpg" width = "200px" alt="Third slide">
+          <img class="d-block w-100" src="img/ted.jpg" alt="Third slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

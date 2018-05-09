@@ -1,12 +1,10 @@
 <?php
-
-    include "../dbConnection.php";
+ include "../dbConnection.php";
     $conn = getDatabaseConnection("finalproject");
     
-     $sql = "SELECT * FROM produce WHERE catId = :type";
-      
+   $sql = "SELECT catDesc FROM f_category WHERE catId ='". $_GET['catId'] . "'";
       $stmt = $conn->prepare($sql);  
-      $stmt->execute(array(":type"=>$_GET['type']));
+      $stmt->execute();
       $record = $stmt->fetchAll(PDO::FETCH_ASSOC);
       //print_r($record);  
     

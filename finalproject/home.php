@@ -6,7 +6,6 @@
                   
                   $sql = "SELECT * FROM produce WHERE 1";
                   
-                  
                   $stmt = $conn->prepare($sql);
                   $stmt->execute($np);
                   $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -71,11 +70,20 @@
         </nav>
         
         <br/>
+        <div id = "facts">
+          <h3>Vegetable Definitions:</h3>
+          <select id = "def">
+              <option value="1">Root Definiton</option>
+              <option value="2">Leaf Definition</option>
+          </select>
+          <div id ="undef"></div>
+        </div>
+        
         <div id = "form">
-        <h2>Sort by</h2>
+        <h2>Filter by</h2>
         Color:
           <select id = "color">
-              <option value="">Select One</option>
+              <option value="0">Select One</option>
               <option value="red">Red</option>
               <option value="green">Green</option>
               <option value="black">Black</option>
@@ -83,59 +91,99 @@
               <option value="orange">Orange</option>
           </select>
           <span>Type: <select id = "type">
-              <option value="">Select One</option>
+              <option value="0">Select One</option>
               <option value="1">Roots</option>
               <option value="2">Leaves</option>
           </select>
+          Search: <input type ="text" id ="keyword" name="keyword">
+          <br>
+          <h3>Order by:</h3>
+              <form id = "radio">
+                <input type="radio" name="orderby" value="name" checked> Name <br>
+                <input type="radio" name="orderby" value="calories"> Calories <br>
+              </form> 
+
           
           </span>
         </div>
         
         
   <script>
+        function filter(){
+    
+            $.ajax({url: "colorApi.php", 
+                  dataType: "json",
+                  type: "GET",
+                  data: {
+                    "color": $("#color").val(),
+                    "keyword": $("#keyword").val(),
+                    "type": $("#type").val(),
+                    "orderby": $('input[name=orderby]:checked').val()
+                  }, 
+                  //beforeSend: function(jqXHR, settings) {
+                  // console.log(settings.url);
+                  //},
+                  success: function(data,status)
+                  {
+                    $("#connection").empty();
+                    //console.log(data);
+                    if(data.length == 0)
+                    {
+                     $("#connection").append(`
+                     <div class='alert alert-danger'>
+                       <strong>No Result!</strong>
+                       Sorry, Please filter and search for something else
+                     </div>`); 
+                    }
+                    for(i = 0; i < data.length;i++)
+                    {
+                      $("#connection").append(data[i].name);
+                      $("#connection").append("<img src = 'img/" + data[i].img + "'width = '150px'>");
+                      
+                    }
+            
+                  },
+                  error: function(data,status) {
+                    //Printing error response
+                    console.log(data.responseText)
+                  }
+                  
+                });
+        };
         
         $(document).ready(function(){
-          
-          
-          $("#type").change(function(){
-                $.ajax({url: "typesApi.php", 
+          $("#def").change(function(){
+            $.ajax({url: "defApi.php", 
                   dataType: "json",
                   type: "GET",
-                  data: {"type": $(this).val()}, 
+                  data: {
+                     "catId": $("#def").val(),
+                  },
                   success: function(data,status)
                   {
-                    $("#connection").empty();
-                    for(i = 0; i < data.length;i++)
-                    {
-                      $("#connection").append(data[i].name);
-                      $("#connection").append("<img src = 'img/" + data[i].img + "'width = '150px'>");
-                      
-                    }
+                    $("#undef").empty();
+
+                    $("#undef").append("<h5>" + data[0].catDesc + "<h5>"); 
             
-                  },
+                  }
                   
                 });
+            
           });
           
+          $("#keyword").keyup(function(){
+            filter();
+          });
           
-              $("#color").change(function(){
-                $.ajax({url: "colorApi.php", 
-                  dataType: "json",
-                  type: "GET",
-                  data: {"color": $(this).val()}, 
-                  success: function(data,status)
-                  {
-                    $("#connection").empty();
-                    for(i = 0; i < data.length;i++)
-                    {
-                      $("#connection").append(data[i].name);
-                      $("#connection").append("<img src = 'img/" + data[i].img + "'width = '150px'>");
-                      
-                    }
-            
-                  },
-                  
-                });
+          $("#radio").click(function() {
+            filter();
+          });
+
+          $("#type").change(function(){
+            filter();
+          });
+          $("#color").change(function(){
+              filter();
           });
       });
   </script>

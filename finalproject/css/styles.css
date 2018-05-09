@@ -33,9 +33,13 @@
 
 body 
 {
-    text-align: center;
+    text-align: center !important;
 }
 
-#connection, #form{
-    text-align:center;
+#connection, #form, #facts{
+    text-align:center !important;
+}
+.delete
+{
+    background-color: solid red;
 }

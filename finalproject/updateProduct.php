@@ -41,7 +41,8 @@
                     description = :description,
                     img = :img,
                     calories = :calories,
-                    catId = :catId
+                    catId = :catId,
+                    color = :color
                 WHERE id = :id";
         $np = array();
         $np[":name"] = $_GET['name'];
@@ -50,6 +51,7 @@
         $np[":calories"] = $_GET['calories'];
         $np[":catId"] = $_GET['catId'];
         $np[":id"] = $_GET['id'];
+        $np[":color"] = $_GET['color'];
                 
         $statement = $connection->prepare($sql);
         $statement->execute($np);        
@@ -71,7 +73,9 @@
 <html>
     <head>
         <title>Update Product </title>
-        
+         <style>body {
+            text-align: center !important;
+        }</style>
     </head>
     <body>
         <h1>Update Product</h1>
@@ -82,10 +86,21 @@
             Description: <textarea name="description" cols = 50 rows = 4><?=$product['description']?></textarea><br>
             Calories: <input type="text" name="calories" value = "<?=$product['calories']?>"><br>
     
-            Category: <input type ="text" name="catId" value = "<?php getCategories( $product['catId'] ); ?>">
-                <br>
-            </select> <br />
+            Category: <select name = "catId">
+              <option value="1" <?php if($product['catId'] == '1'){echo ' selected="selected"';}?>>Roots</option>
+              <option value="2" <?php if($product['catId'] == '2'){echo ' selected="selected"';}?>>Leaves</option>
+        </select><br>
             Set Image Url: <input type = "text" name = "img" value = "<?=$product['img']?>"><br>
+            Color: 
+            <select name = "color">
+              <option value="red" <?php if($product['color'] == 'red'){echo ' selected="selected"';}?>>Red</option>
+              <option value="green" <?php if($product['color'] == 'green'){echo ' selected="selected"';}?>>Green</option>
+              <option value="black" <?php if($product['color'] == 'black'){echo ' selected="selected"';}?>>Black</option>
+              <option value="white" <?php if($product['color'] == 'white'){echo ' selected="selected"';}?>>White</option>
+              <option value="orange" <?php if($product['color'] == 'orange'){echo ' selected="selected"';}?>>Orange</option>
+        </select><br><br>
+        <span><button type = "button"><a  href = "admin.php">Back</a>  </button> </span>
+        
             <input type="submit" name="updateProduct" value="Update Product">
             
         </form>
