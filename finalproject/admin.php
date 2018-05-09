@@ -78,16 +78,12 @@ function displayAllProducts(){
 
         <br />
         
-        <div class="form-group">
-        <form action="addProduce.php">
-            <input type="submit" name="addproduce" value="Add Produce"/>
-        </form>
-        
+        </div>
+        </div>
+        <strong>Admin Logout: </strong> 
         <form action="logout.php">
             <input type="submit"  value="Logout"/>
         </form>
-        </div>
-        </div>
         <h2>Generate reports</h2>
         <div id = "reports">
             <input type = "button" id = "avg" value = "Average Calories">
@@ -99,8 +95,15 @@ function displayAllProducts(){
         </div>
         <br />
         <div id = "produce">
-        <h2> <strong>Produce Table: </strong></h2> <br />
+        <h2> <strong>Produce Table: </strong></h2>
         
+        <div class="form-group">
+        <form action="addProduce.php">
+            <input type="submit" name="addproduce" value="Add Produce"/>
+        </form>
+        
+        
+        <br><br>
         <?php $records=displayAllProducts();
             foreach($records as $record) {
                 echo "[<a href='updateProduct.php?id=".$record['id']."'>Update</a>]";

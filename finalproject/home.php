@@ -137,9 +137,12 @@
                     }
                     for(i = 0; i < data.length;i++)
                     {
-                      $("#connection").append(data[i].name);
-                      $("#connection").append("<img src = 'img/" + data[i].img + "'width = '150px'>");
-                      
+                      $("#connection").append("<h3>" + data[i].name + "</h3><br>");
+                      $("#connection").append("<img src = 'img/" + data[i].img + "'width = '150px'><br>");
+                      $("#connection").append("<h4>Vegetable Color: <strong class = '"+ data[i].color +"'>"+ data[i].color + "</strong></h4>");
+                      $("#connection").append(data[i].description + "<br>");
+                      $("#connection").append("<strong>Vitamins: </strong>" + data[i].vitamins + "<br>");
+                      $("#connection").append("<strong>Calories: </strong>" + data[i].calories + "<br>");
                     }
             
                   },
